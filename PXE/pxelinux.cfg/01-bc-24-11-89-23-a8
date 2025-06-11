@@ -1,0 +1,12 @@
+default menu.c32
+prompt 0
+timeout 50
+
+LABEL Proxmox Rescue
+        MENU LABEL Boots proxmox kernel and initrd
+        KERNEL boot/vmlinuz
+        APPEND initrd=boot/initrd root=/dev/mapper/pve-root ro mitigations=off ramdisk_size=16432
+
+LABEL local
+  MENU LABEL Boot from local disk
+  LOCALBOOT 0

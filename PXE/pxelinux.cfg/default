@@ -1,0 +1,10 @@
+DEFAULT menu
+PROMPT 0
+TIMEOUT 50
+ONTIMEOUT local
+
+MENU TITLE PXE Boot Menu
+
+LABEL local
+  MENU LABEL Boot from local disk
+  LOCALBOOT 0
